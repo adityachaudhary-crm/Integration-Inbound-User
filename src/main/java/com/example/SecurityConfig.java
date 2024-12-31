@@ -12,7 +12,7 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests(authorizeRequests ->
                 authorizeRequests
-                    .requestMatchers("webserver").permitAll() // Allow access to home endpoint
+                    .requestMatchers("/").permitAll() // Allow access to home endpoint
                     .anyRequest().authenticated() // All other endpoints require authentication
             )
             .oauth2Login(oauth2Login ->
