@@ -19,3 +19,4 @@ Java Spring Boot, hosted on Heroku connects to Salesforce. User enters his sales
 - Host: https://integration-inbound-user-input-cafcf94ea457.herokuapp.com/
 - Endpoint: Root (/)
 - Salesforce-Org: https://adityachaudharycrm-dev-ed.develop.my.salesforce.com
+- Brnach: heroku
