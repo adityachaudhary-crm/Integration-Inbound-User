@@ -17,7 +17,7 @@ public class SecurityConfig {
             )
             .oauth2Login(oauth2Login ->
                 oauth2Login
-                    .defaultSuccessUrl("/webserver/api/salesforce", true) // Redirect after successful login
+                    .defaultSuccessUrl("/api/salesforce", true) // Redirect after successful login
             );
         return http.build();
     }
