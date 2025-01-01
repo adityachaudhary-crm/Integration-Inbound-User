@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 
 @Controller
-@RequestMapping("/webserver")
-
 public class SalesforceController {
 
     private final RestTemplate restTemplate;
@@ -31,11 +29,6 @@ public class SalesforceController {
     @GetMapping("/")
     public String home() {
         return "redirect:/oauth2/authorization/salesforce";
-    }
-
-    @GetMapping("/home")
-    public String base() {
-        return "";
     }
 
     @GetMapping("/api/salesforce")
