@@ -9,10 +9,12 @@ Java Spring Boot, hosted on Heroku connects to Salesforce. User enters his sales
 - Java App to User to Salesforce Server.
   
 ### Flow Summary:
-- User accesses the Java App.
-- Java App redirects the User to Saleforce Login page along with client Id. 
-- Salesforce redirects the user to Java App's 'Callback URL' along with 'Access Code'
-- Java App fetches Access-Token from Salesforce.
+- User accesses the Java App's endpoint '/'.
+- Redirected to redirect:/oauth2/authorization/salesforce
+- Above endpoint acts as a function to invoke Salesforce '/services/oauth2/authorize' with clientId, responsetype=code and redirect URI=/login/oauth2/code/salesforce
+- User logs in salesforce. 
+- Salesforce redirects the user to Java App's 'Callback URL'(2 steps up) along with 'Access Code'
+- This endpoint is resposible to fetches Access-Token from Salesforce.
 - Java App fetches /account ( resource) from Salesforce using Access Token.
 
 ### Heroku
