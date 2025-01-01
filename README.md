@@ -20,3 +20,7 @@ Java Spring Boot, hosted on Heroku connects to Salesforce. User enters his sales
 - Endpoint: Root (/)
 - Salesforce-Org: https://adityachaudharycrm-dev-ed.develop.my.salesforce.com
 - Branch: heroku
+
+### Salesforce
+- External Client App - Setup in Salesforce
+- Redirect URL is same as Callback URL.
