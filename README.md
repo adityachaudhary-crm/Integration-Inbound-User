@@ -15,6 +15,6 @@ Summary:
 - Java App fetches Access-Token from Salesforce.
 - Java App fetches /account ( resource) from Salesforce using Access Token.
   
-Host: https://integration-inbound-user-input-cafcf94ea457.herokuapp.com/
-Endpoint: Root (/)
-Salesforce-Org: https://adityachaudharycrm-dev-ed.develop.my.salesforce.com
+- Host: https://integration-inbound-user-input-cafcf94ea457.herokuapp.com/
+- Endpoint: Root (/)
+- Salesforce-Org: https://adityachaudharycrm-dev-ed.develop.my.salesforce.com
